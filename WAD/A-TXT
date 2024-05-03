@@ -1,0 +1,6 @@
+1 . npm install -g @angular/cli
+2 . ng new my-angular-app
+3 . cd my-angular-app
+4 . ng serve
+5 . ng generate component component-name
+6 . ex : ng generate component header

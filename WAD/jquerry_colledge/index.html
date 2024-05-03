@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .move {
+            margin-top: 25px;
+            position: absolute;
+            top: 10%;
+            left: 100%; /* Start position - fully off-screen to the right */
+            animation: slideLeft 5s linear infinite; /* 5s duration, linear timing, infinite repetition */
+        }
+
+        @keyframes slideLeft {
+          0% {
+            left: 100%; /* Start position */
+          }
+          100% {
+            left: 0; /* End position - fully on-screen to the left */
+          }
+        }
+        .rows img {
+            width: 150px; /* Set the width of the images */
+            height: 150px; /* Maintain aspect ratio */
+            margin: 5px; /* Add some margin between images */
+        }
+        ul li{
+           
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h2>PUNE INSTITUTE OF COMPUTER TECHNOLOGY</h2>
+            <center><p>Affiliated to SPPU,Pune Aggregated by NAAC A++</p></center>
+            
+        </div>
+
+        <div data-role="navbar" style="background-color: azure; border-radius: 250px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="register.html">Contact Us</a></li>
+                <li><a href="#">Achievments </a></li>
+            </ul>
+        </div>
+
+        <!-- <center><h2 class="move">Welcome To PICT</h2></center> -->
+        <div data-role="content">
+            <center><h2 class="move">Welcome To PICT</h2></center>
+            <p style="text-align: justify; color: rgb(128, 0, 0); margin-top: 50px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, culpa pariatur. Asperiores quos odit dolorem, laudantium nemo, distinctio ad recusandae, tempore explicabo iste eaque! Aliquid quis nulla hic exercitationem adipisci!</p>
+        </div>
+
+        <!-- <div data-role="content"> -->
+            <center>
+                <h3 style="background-color: azure; color: brown;"> Our Toppers in SPPU</h3>
+                <h4 style="margin-top: 15px;">IT BRANCH</h4>
+            <div class="rows">
+                <img src="st1.jpg" alt="Rcb Logo"/>
+                <img src="st2.avif" alt="Rcb Logo"/>
+                <img src="st1.jpg" alt="Rcb Logo"/>
+            </div>
+            <br>
+            <h4 style="margin-top: 15px;">CS BRANCH</h4>
+            <div class="rows">
+                <img src="st1.jpg" alt="Rcb Logo"/>
+                <img src="st2.avif" alt="Rcb Logo"/>
+                <img src="st1.jpg" alt="Rcb Logo"/>
+            </div>
+            <br>
+            <h4 style="margin-top: 15px;">ENTC BRANCH</h4>
+            <div class="rows">
+                <img src="st1.jpg" alt="Rcb Logo"/>
+                <img src="st2.avif" alt="Rcb Logo"/>
+                <img src="st1.jpg" alt="Rcb Logo"/>
+            </div>
+            <br>
+            
+            </center>
+        </div>
+
+        <div data-role="footer" data-theme="b">
+            <center>
+                <ul>
+                    <li><a href="index.html">Home</a></li><br>
+                    <li><a href="about.html">About</a></li><br>
+                    <li><a href="register.html">Register</a></li><br>
+                </ul>
+    
+                <p>Copyright ,2024 |Yash Ruikar,All Rights Reserved</p>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

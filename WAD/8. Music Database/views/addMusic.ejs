@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Add Music</title>
+    <style>
+      label {
+        margin: 10px 0px 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h3 mt-4 ms-4">Add Song</h1>
+    <form action="/add" method="post" class="container m-2 p-4 g-2 w-75">
+      <div class="form-group">
+        <label for="songName">Song Name</label>
+        <input
+          type="text"
+          id="songName"
+          class="form-control"
+          name="songName"
+          required
+        />
+      </div>
+
+      <label for="filmName">Film</label>
+      <input
+        type="text"
+        id="filmName"
+        class="form-control"
+        name="filmName"
+        required
+      />
+
+      <label for="singer">Singer</label>
+      <input
+        type="text"
+        id="singer"
+        class="form-control"
+        name="singer"
+        required
+      />
+
+      <label for="musicDirector">Music Director</label>
+      <input
+        type="text"
+        id="musicDirector"
+        class="form-control"
+        name="musicDirector"
+        required
+      />
+
+      <label for="actor">Actor</label>
+      <input
+        type="text"
+        id="actor"
+        class="form-control"
+        name="actor"
+        value="Unknown"
+      />
+
+      <label for="actress">Actress</label>
+      <input
+        type="text"
+        id="actress"
+        class="form-control"
+        name="actress"
+        value="Unknown"
+      />
+
+      <button type="submit" class="btn btn-primary m-2">Add Song</button>
+    </form>
+  </body>
+</html>
